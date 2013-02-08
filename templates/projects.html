@@ -1,0 +1,14 @@
+<p>This is the partial for PROJECTS</p>
+<p>
+  Showing of 'interpolate' filter:
+  {{ 'Current version is v%VERSION%.' | interpolate }}
+</p>
+
+<div ng-controller="ProjectsCtrl">
+  <ul>
+    <li ng-repeat="project in projects" class="ng-binding">
+    	<p>[{{$index + 1}}] {{project.name}} - {{project.description}}</p>
+
+    </li>
+  </ul>
+</div>
